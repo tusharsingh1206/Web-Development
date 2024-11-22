@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid</title>
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+        }
+        #container{
+            text-align: center;
+            display: grid;
+            grid-template-columns: 50px 50px;/*Two column*/
+            grid-template-rows: 50px 50px;/*Two row*/
+            justify-content: center;
+        }
+        .box{
+            height: 50px;
+            width: 50px;
+             margin: 5px;
+        }
+        #box1{
+            background-color: green;
+        grid-column: 1/2;
+    grid-row: 1/2;}
+        #box2{
+            background-color: violet;
+            grid-column: 2/2;
+            grid-row: 1/2;}
+        #box3{
+            background-color: yellow;
+            grid-column: 1/2;
+            grid-row: 2/2;}
+        #box4{
+            background-color:orangered;
+            grid-column: 2/2;
+            grid-row: 2/2;}
+
+        
+    </style>
+</head>
+<body>
+    <footer>
+        <p>
+           Grid is a multi dimensional layout.
+        </p>
+        </footer>
+    <main>
+        <div id="container">
+        <div id="box1" class="box">Box1</div>
+        <div id="box2" class="box">Box2</div>
+        <div id="box3" class="box">Box3</div>
+        <div id="box4" class="box">Box4</div>
+          </div>
+    </main>
+    
+</body>
+</html>

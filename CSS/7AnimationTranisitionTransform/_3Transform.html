@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transform</title>
+</head>
+<style>
+    #box{
+        height: 100px;
+        width: 100px;
+        background-color: plum;
+        border: 2px solid black;
+        border-radius: 50px;
+        position: relative;
+        top: 100px;
+        left: 100px;
+        transition: all 3s ease-in-out 0s;
+    }
+    #box:hover
+    {
+        /* transform: rotate(56000deg); */
+        /* transform: rotatex(56000deg); */
+        /* transform: rotatey(56000deg); */
+        /* transform: rotatez(56000deg); */
+
+        /* transform:  scale(2); */
+        /* transform:  rotate(3600deg) scale(0.05); */
+
+        /* transform: translatex(50px); */
+        /* transform: translate(50px,50px); */
+       
+        transform: skew(45deg);
+        /* transform: skew(900deg); */
+     }
+</style>
+<body>
+    <main>
+        <h1 align="center">Transform Property</h1>
+    <ol>
+    <li>
+        <h3>Rotate is used to rotate the box by using the degree</h3>
+    </li>
+    <li>
+        <h3>Scale is used to increase the size of the box by using the integer it will be 2 or 3,2 means twice.</h3>
+    </li>
+    <li>
+        <h3>Translate is used to increase the size of the box in the x and in the y axis.</h3>
+    </li>
+    <li>
+        <h3>Skew is used to flaten (Pichkana) the box.</h3>
+    </li>
+    </ol>
+        <div id="box"><br>************<br>*************<br>************</div>
+    </main>
+</body>
+</html>

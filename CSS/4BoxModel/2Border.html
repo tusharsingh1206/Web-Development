@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Border property</title>
+    <style>
+      #random {
+        height: 50px;
+        width: 100px;
+        background-color: aqua;
+        border: 5px dotted hotpink;
+        border-radius: 100px 100px 100px 100px; /*start from left*/
+        box-sizing: border-box;
+      }
+      #first {
+        height: 60px;
+        width: 60px;
+        background-color: aquamarine;
+        border: 2px solid black;
+        box-sizing: border-box;
+        /* border:10px dashed yellow */
+      }
+    </style>
+  </head>
+  <body>
+    <button id="random">Click Me</button><br />
+    <br />
+    <div id="first">Hello Tushar</div>
+    <br />
+    <h3>
+      In border we have to define three things.
+      <ol>
+        <li>width</li>
+        <li>
+          Style
+          <ul type="square">
+            <li>solid</li>
+            <li>dotted</li>
+            <li>dashed</li>
+          </ul>
+        </li>
+        <li>Color</li>
+      </ol>
+    </h3>
+  </body>
+</html>

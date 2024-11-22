@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Colour property</title>
+    <link rel="stylesheet" href="_2index.css" />
+    <h1>This is element selector</h1>
+    <style>
+      p {
+        color: rgb(82, 140, 140);
+      }
+      h1 {
+        color: red;
+      }
+        p{
+          background-color: blue;
+        }
+    </style>
+    <h1>If any style is given inside asteric(*) then this is called universal selector and this is apply on hole page by default.And its priority is very least.</h1>
+   <style>
+     *{
+        background-color:violet;
+    }
+   </style>
+  </head>
+  <body>
+    <p style="color: black" >
+      The order of css effect on any tag is in this order:INLINE CSS>INTERNAL
+      CSS>EXTERNAL CSS
+    </p>
+    <h6>The style which is applied on it is type of intenal styling.</h6>
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum itaque
+      quae laboriosam ad dicta iste labore tempora corrupti et unde, sint,
+      rerum, quisquam exercitationem ullam.
+    </p>
+    <h1 style="color: aquamarine">Hello</h1>
+    <h4 style="color: green">
+      This type of style is called inline css.And this type of inline css in not
+      preffered.
+    </h4>
+  </body>
+</html>

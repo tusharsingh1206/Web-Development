@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      h1 {
+        color: red;
+      } /*Element Selector*/
+      * {
+        background-color: aqua;
+      } /*Universal Selector*/
+      #random {
+        color: blue;
+      } /* ID Selector*/
+      .random_text {
+        color: blanchedalmond;
+      } /*Class Selector*/
+      #ram,
+      .shyam {
+        color: blueviolet;
+      } 
+      h4,p
+      {
+        color:brown
+      }/*Group Selector*/
+      div p {
+        color: yellow;
+      }
+      /*Descendant Selector*/
+    </style>
+  </head>
+  <body>
+    <h3>Types of selector</h3>
+    <ol>
+      <li>Element Selector: Same type of element is included.</li>
+      <li>Universal Selector: Whole page is included.</li>
+      <li>ID Selector: Unique element is included with unique id.</li>
+      <li>Class Selector: elements with same class is included.</li>
+      <li>
+        Group Selector: If we want to give same property to multiple element
+        then we use it.
+      </li>
+    </ol>
+    <h1>Hello Tushar Singh.</h1>
+    <h1 id="random">Hello Tushar Singh.</h1>
+    <h1 class="random_text">Hello Tushar Singh.</h1>
+    <h1 class="random_text">Hello Tushar Singh.</h1>
+    <h1 id="ram">Hello Tushar Singh.</h1>
+    <h1 class="shyam">Hello Tushar Singh.</h1>
+
+    <div id="first">
+      <p>
+        This type of selector is applied when hierarchy is made it means same
+        style is applied to all childeren.One tag is come under another tag.
+      </p>
+      <h4>Hello</h4>
+    </div>
+    <p>Lorem ipsum dolor sit amet.</p>
+  </body>
+</html>

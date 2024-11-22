@@ -1,0 +1,51 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+header{
+    background-color:palegreen;
+    margin: 3px;
+}
+nav a{
+    text-decoration:none ;/*To remove the underline*/
+    margin-left: 70px;
+    padding: 20px;
+}
+#div1{
+    height: 100px;
+    width: 100px;
+    background-color: green;
+    border: 5px solid black;
+    border-radius: 50%;
+    text-align: center;
+    margin: 40px;
+}
+.box{
+    height: 100px;
+    width: 100px;
+    display: inline-block;
+    border: 5px solid black;
+    background-color: blueviolet;
+    margin: 5px;
+}
+#container{
+    border: 5px solid black;
+    margin: 5px;
+}
+#div5{
+    position: fixed;
+    right: 10px;
+}
+.bo{
+    height: 100px;
+    width: 100px;
+    border: 5px solid black;
+    background-color: blueviolet;
+    margin: 5px;
+    text-align: center;
+}
+footer{
+    position: fixed;
+    bottom: 0px;
+    background-color: bisque;
+}

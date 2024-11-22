@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Padding property</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+      #padder {
+        background-color: blanchedalmond;
+        height: 50px;
+        width:50px;
+        padding: 5px 10px 15px 20px;
+      }
+      #button{
+        background-color: aqua;
+      }
+    </style>
+  </head>
+  <body>
+    <h3>
+      Padding will execute in clock wise order and starts from TOP such as :
+      5px,10px,15px,20px.
+    </h3>
+    <h3>If we define only one side padding then it will consider all side padding.</h3>
+    <br />
+    <div id="padder">Padding checker</div>
+    <button id="button">Click Me</button>
+  </body>
+</html>

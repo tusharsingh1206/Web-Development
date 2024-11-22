@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>LABLE</title>
+  </head>
+  <body>
+    <form action="post">
+      <label for="username">username:</label>
+      <input type="text" placeholder="name" required /><br />
+
+      <label for="password">password:</label>
+      <input
+        type="password"
+        id="user_passworrd"
+        placeholder="password"
+        required
+      /><br />
+
+      <label for="date">Date:</label>
+      <input type="date" /><br />
+
+      <label for="file"> File:</label>
+      <input type="file"/><br />
+
+      <label for="color">Color:</label>
+      <input type="color" /><br />
+
+      <label for="price range"></label>
+      <input type="range" /><br />
+
+      <label for="button"></label>
+      <input type="button" value="Clicked Me" /><br />
+      <table border="1">
+        <tr>
+          <td>
+            <label for="male">male</label>
+            <input type="radio" name="gender" id="male" value="male" /><br />
+          </td>
+          <td>
+            <h3>
+              Yaha pr yey jo lavel hai vo uske liye hai jiski id male hai kyu ki
+              for me male define hai.
+            </h3>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <label for="female">female</label>
+            <input
+              type="radio"
+              name="gender"
+              id="female"
+              value="female"
+            /><br />
+          </td>
+          <td>
+            <h3>
+              Yaha pr yey jo lavel hai vo uske liye hai jiski id female hai kyu
+              ki for me female define hai.
+            </h3>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <label for="transgender">Transgender</label>
+            <input type="radio" name="gender" id="transgender">
+          </td>
+          <td> 
+            <h3>Yaha pr yey jo lavel hai vo uske liye hai jiski id female hai kyu
+            ki for me female define hai.
+          </h3>
+        </td>
+        </tr>
+        <tr>
+          <td>
+            <label for="other">other</label>
+            <input type="radio" name="gender" id="other" value="other" /><br />
+          </td>
+          <td>
+            <h3>
+              Yaha pr yey jo lavel hai vo uske liye hai jiski id other hai kyu
+              ki for me other define hai.
+            </h3>
+          </td>
+        </tr>
+      </table>
+
+      <table border="1">
+        <tr>
+          <td>
+            <label for="banana">Banana</label>
+            <input type="checkbox" name="fruit" id="banana" /><br />
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <label for="mango">Mango</label>
+            <input
+              type="checkbox"
+              name="fruit"
+              id="mango"
+              value="mango"
+            /><br />
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <label for="apple">Apple</label>
+            <input
+              type="checkbox"
+              name="fruit"
+              id="apple"
+              value="apple"
+            /><br />
+          </td>
+        </tr>
+      </table>
+
+      <label for="country">Choose your country:</label>
+      <select name="fruits" id="fruits">
+        <option value="India">India</option>
+        <option value="Pakistan">Pakistan</option>
+        <option value="Australia">Australia</option>
+        <option value="Bangladesh">Bangladesh</option>
+        <option value="South Africa">South Africa</option>
+      </select
+      ><br />
+
+      <textarea type="text" name="story" id="story" rows="4" column="4">
+Comment Here!</textarea
+      ><br />
+
+      <input style="background-color:aqua;" type="submit" value="submit" /><br />
+    </form>
+    <!-- In this case both can be selected because we do not use name attribute -->
+    <label for="male">Male:</label>
+    <input type="radio" >
+    <label for="male">Female:</label>
+    <input type="radio" ><br>
+
+    <!-- In this case both can not be selected because we use name attribute -->
+    <label for="male">Male:</label>
+    <input type="radio" name="gender" >
+    <label for="male">Female:</label>
+    <input type="radio" name="gender"><br>
+</body>
+</html>

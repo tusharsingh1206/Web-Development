@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Display None</title>
+    <style>
+        *{padding: 0px;
+        margin: 0px;}
+        .box{
+            height: 100px;
+            width: 100px;
+            margin: 10px;
+            background-color: aqua;
+            text-align: center;
+            border-radius: 5px;
+            border: 5px solid black;
+        }
+        #div2{
+            visibility: hidden;
+            display: none;
+        }
+    </style>
+</head>
+<body>
+<ol>
+        <li>
+            <h3>In general when we use the visibility hidden then our box will diappear but it will occupy it total space.</h3>
+        </li>
+        <li> 
+            <h3>When we use display none then the diappeared box does not occucpy it total space.</h3>
+       </li>
+</ol>
+  
+    <div id="div1" class="box">Box1</div>
+    <div id="div2" class="box">Box2</div>
+    <div id="div3" class="box">Box3</div>
+</body>
+</html>

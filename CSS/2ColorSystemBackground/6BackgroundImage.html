@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Background Image</title>
+    <style>
+      * {
+        background-color: aqua;
+      }
+      #icon {
+        background-color: blue;
+      }
+      #icon {
+        height: 100px;
+        width: 100px;
+        background-image: url(myntra.png);/*This is used to apply image on our page.*/
+       background-color: brown;
+        background-size: contain; /*This is used to show the image properly*/
+        background-repeat: no-repeat; /*This is used so that image will not repeat when height and width will set*/
+        background-position:top ;/*This is used to give the location of our image if our image is small and our container is large*/
+      }
+    </style>
+  </head>
+  <body>
+    <div id="icon"></div>
+  </body>
+</html>

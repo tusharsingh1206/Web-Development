@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Relative Unit rem</title>
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+            font-size: 30px;
+        }
+        #Box1{
+            background-color: aqua;
+            height: 100px;
+            width: 200px;
+            font-size: 15px;
+            /* border: 5px solid black; */
+        }
+        #Box2{
+            text-align: center;
+            /* border: 5px solid black; */
+            background-color: brown;
+            font-size: 2rem;
+        }
+        #par{
+            font-size: 25px;
+        }
+    </style>
+</head>
+<body>
+    Root Element
+    <p id="par">
+        In the rem the size of the child box will change according to the root element and 2rem means the two times of the parent font-size.
+    </p>
+
+    <div id="Box1" class="div">
+            Box1
+        <div id="Box2" class="div">
+            Box2
+        </div>
+    </div>
+</body>
+</html>

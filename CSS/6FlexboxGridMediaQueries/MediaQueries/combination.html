@@ -1,0 +1,28 @@
+<!-- @media(condition){CSS rules} 
+ The given rules will only apply when the given condition will met.-->
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Media Queries</title>
+     <style>
+         .div{
+             padding: 5px;
+             height:80px;
+             width: 80px;
+             background-color: aqua;
+         }
+         /* if the width goes less than 300 px and more than 250px then this condition will apply */
+        @media screen and (max-height:300px) and (min-height:250px){
+         .div{background-color: red;
+
+             border-radius: 50%;
+         }
+        }
+     </style>
+ </head>
+ <body>
+     <div align="center"id="box" class="div">Hello</div>
+ </body>
+ </html>

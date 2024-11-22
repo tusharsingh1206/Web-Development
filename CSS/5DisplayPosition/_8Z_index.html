@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Z-index</title>
+    <style>
+        *{
+            background-color: bisque;
+        }
+        .box{
+            position: absolute;
+            border: 3px solid black;
+            height: 100px;
+            width: 100px;
+            text-align: center;
+            margin:15px;
+            font-size: 25px;
+        }
+        #div1{
+            background-color: red;
+            z-index: 2;
+            left: 20px;
+            top: 60px;
+        }
+        #div2{
+            background-color: aqua;
+            z-index: 1;
+            left: 30px;
+            top: 60px;
+        }
+    </style>
+</head>
+<body>
+<ol>
+<li>
+    <h3>It determine the stacking order (overlapping) of the elements along the Z-axis.
+    </h3>
+</li>
+<li>
+    <h3>It only apply to element with position set to relative.,fixed,absolute and the sticky.
+    </h3>
+</li>
+<li>
+    <h3>
+        It will not apply for the static.
+    </h3>
+</li>
+<li></li>
+    <h3>
+        The element with higher Z-index will on the upper of the page.
+    </h3>
+</li>
+</ol>
+<div id="div1" class="box">Z-index1</div>
+<div id="div2" class="box">Z-index2</div>
+</body>
+</html>

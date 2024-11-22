@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox item(Align self)</title>
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+        }
+        .box{
+            height: 120px;
+            width: 120px;
+            border: 3px solid black;
+            margin: 5px;
+        }
+        #box1{background-color: green;}
+        #box2{background-color: violet;}
+        #box3{background-color: yellow;}
+        #box4{background-color:orangered;}
+        #box5{background-color:white;}
+        #box6{background-color:palegreen;}
+        #box7{background-color:palegoldenrod;}
+        #container{
+            height: 600px;
+            width: 600px;
+            border: 3px solid black; 
+            margin: 15px;
+            background-color :aqua ;
+            display: flex;  
+            justify-content: center;
+        }
+        #box3{
+            /* align-self: start; */
+            align-self: end;
+            /* align-self: center; */
+            /* align-self: normal; */
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <h1 align="center">Flex Container</h1>
+    <div id="container">
+        <div id="box1" class="box">Flex box1</div>
+        <div id="box2" class="box">Flex box2</div>
+        <div id="box3" class="box">Flex box3</div>
+        <div id="box4" class="box">Flex box4</div>
+          </div>
+    </main>
+    <footer>
+    <p>
+        align self is used to adjust the single box not the whole container.
+    </p>
+    </footer>
+</body>
+</html>

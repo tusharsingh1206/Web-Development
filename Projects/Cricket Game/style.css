@@ -1,0 +1,14 @@
+#heading{
+  text-transform: uppercase;
+  font-style: italic;
+  color: rgb(123, 75, 75);
+  
+}
+.button{
+  font-size:20px;
+  margin: 10px;
+}
+*{
+  text-align: center;
+  background-color: rgb(183, 177, 169);
+}

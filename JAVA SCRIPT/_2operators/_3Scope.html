@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Scope</title>
+</head>
+<body>
+  <p>same variable can be defined many times and when we use let</p>
+  <p>But when we use var then it can not be redefined.</p>
+  <script>
+    let age=35;
+
+    let userMessage;
+    if(age>18){
+        userMessage='You can drive';
+       console.log(userMessage);
+    }
+    else{
+      userMessage='Use a Bicycle';
+     console.log(userMessage);
+    }
+    //it will give a result of undefinedd because it is defined again in the if statement.
+    console.log(userMessage);
+
+    // var userMessage;
+    // if(age>18){
+    //    var userMessage='You can drive';
+    //    console.log(userMessage);
+    // }
+    // else{
+    //  var userMessage='Use a Bicycle';
+    //  console.log(userMessage);
+    // }
+    // //it will not  give a result of undefinedd because it will used as a global variable    
+    // console.log(userMessage);
+
+  </script>
+</body>
+</html>

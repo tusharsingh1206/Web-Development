@@ -1,0 +1,28 @@
+<!-- @media(condition){CSS rules} 
+ The given rules will only apply when the given condition will met.-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media Queries</title>
+    <style>
+        .div{
+            padding: 5px;
+            height:10px;
+            width: 10px;
+            background-color: aqua;
+        }
+        /* if the width goes more than 300 px then this condition will apply */
+       @media screen and (min-width:300px){
+        .div{
+            height: 150px;
+            width: 150px;
+        }
+       }
+    </style>
+</head>
+<body>
+    <div id="box" class="div">Hello</div>
+</body>
+</html>
