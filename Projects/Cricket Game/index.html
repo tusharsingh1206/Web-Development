@@ -11,7 +11,6 @@
   <button class="button" onclick="
    //THis will generate the random no b/w 0-1
   let randomNumber=Math.random()*3;
-
   let computerChoice;
   if(randomNumber>0 && randomNumber<=1)
   {
@@ -82,8 +81,6 @@ alert(`'You have chosen the Bat.Computer choice is ${computerChoice}.${resultMsg
     resultMsg='User won.';
   }
   alert(`'You have chosen the Ball.Computer choice is ${computerChoice}.${resultMsg}`)">Ball</button>
-
-
   <button class="button" onclick="
   //THis will generate the random no b/w 0-1
   randomNumber=Math.random()*3;
@@ -102,7 +99,6 @@ else if(randomNumber>1 && randomNumber<=2)
    computerChoice='Stump';
    // console.log('Computer choice is Stump');
  }
-
  if(computerChoice==='Ball')
  {
    // console.log('User won')
@@ -118,12 +114,8 @@ else if(randomNumber>1 && randomNumber<=2)
    // console.log('Computer won')
    resultMsg=`It's a tie.`;
  }
-
- alert(`'You have chosen the Stump.Computer choice is ${computerChoice}.${resultMsg}`)"
-  
-  
-  >Stump</button>
-
+ alert(`'You have chosen the Stump.Computer choice is ${computerChoice}.${resultMsg}`)">
+ Stump</button>
   <!-- <script>
     console.log(math.random());
   </script> -->
