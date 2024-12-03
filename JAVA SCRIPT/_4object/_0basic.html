@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Object basic</title>
+</head>
+<body>
+    <!-- object is mainly used to determine the different properties of the product, syntax of the object is:
+    let product{
+        key:'value',
+        company:'Mango',
+        item_name:'Cotton',
+        price:502
+     }, -->
+     <script>
+        let product={
+        company:'Mango',
+        item_name:'polyester',
+        'item-name':'Cotton',
+        price:502,
+     };
+     console.log(typeof(product));
+     console.log((product));
+    // . is used to access some specific property
+    console.log(product.item_name);
+    console.log(product['item-name']);
+    //deleting some values from the product
+    delete product.company;
+    console.log(product);
+     </script>
+</body>
+</html>

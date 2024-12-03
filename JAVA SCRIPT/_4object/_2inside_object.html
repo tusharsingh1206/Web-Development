@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inside object</title>
+</head>
+<body>
+    <!-- function is also come inside the product -->
+    <script>
+        let product={
+            company:'Myntra',
+            itemName:'Cotton striped t-shirt',
+            price:231,
+            rating:{
+                stars:4.5,
+                noOfReviews:87,
+            },
+            displayPrice: function(){
+                // console.log(`Price of the product is ₹${product.price}`)
+                //this means yahi wale product ka price
+                console.log(`Price of the product is ₹${this.price}`)
+                
+            },
+        };
+
+        product.displayPrice();
+    </script>
+</body>
+</html>

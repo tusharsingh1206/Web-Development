@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Object Reference</title>
+</head>
+<body>
+    <script>
+        //this is the normal way in this vvalue not change
+        let a=5;
+        let b=a;
+        console.log(`a=${a},b=${b}`);
+        a=8;
+        console.log(`a=${a},b=${b}`);
+        //in this way reference will pass and value will change
+        let x={num:6};
+        let y=x;
+        console.log(`x=${x.num},y=${y.num}`);
+        x.num=9;
+        console.log(`x=${x.num},y=${y.num}`);
+        //comparison by using the ==,=== it will only compare the  address
+        let p={pop:'Tushar'};
+        let q={pop:'Tushar'};
+        console.log(p==q);//false->comparig the reference not the value
+        </script>
+</body>
+</html>

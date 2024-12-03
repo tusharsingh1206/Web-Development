@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Object shortcuts</title>
+</head>
+<body>
+    <script>
+        //it is used to remove(nikalna) the objects from the company
+        let product={
+            company:'Myntra',
+            price:432,
+            itemName:'cotton',
+        }
+        console.log(product);
+        //De-structuring
+        // let company=product.company;
+        let {company,price} =product;
+        console.log(company,price);
+    </script>
+</body>
+</html>
