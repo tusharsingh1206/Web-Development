@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JSON basics</title>
+</head>
+<body>
+    <script>
+        //JSON=javascript object notation,It is same as the javascript object but only the difference is,key is also in the double comma and javascript object is bydefault a JSON.
+        
+        //JSON.parse()->convert string into the JSON
+        //JSON.stringify()->convert JSON in to the string ad it is easy to transport the string over the network.
+        
+        let product={
+            name:'T-shirt',
+            price:435,
+            rating:{
+                stars:3.9,
+                noOfReview:858,
+            },
+        };
+        console.log(product);
+        console.log(typeof(product));
+        //converting the object into the string
+        let str=JSON.stringify(product);
+        console.log(str);
+        console.log(typeof(str));
+        // conversion of the string in to the json
+        let newProduct=JSON.parse(str);
+        console.log(newProduct);
+        console.log(typeof(newProduct));
+    </script>
+</body>
+</html>

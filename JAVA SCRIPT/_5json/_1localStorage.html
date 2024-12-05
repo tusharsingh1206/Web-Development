@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Local Storage</title>
+</head>
+<body>
+    <script>
+         //there aree two function to perform the local storage.
+         //setitems->it stores the data or set the data
+         //getitems->it is used to get the stored items.
+         let product={
+            name:'T-shirt',
+            price:435,
+            rating:{
+                stars:3.9,
+                noOfReview:858,
+            },
+        };
+
+        // localStorage.setItem('Name','Tushar Singh')
+        // localStorage.setItem('price','345')
+        // // this wiil fetch the value from the local storage inspite of the comment of local storage.
+        // console.log(localStorage.getItem('price'));
+        // console.log(localStorage.getItem('Name'));
+
+        localStorage.setItem('product',JSON.stringify(product));
+        console.log(localStorage.getItem('product'));
+        //convert it into the objecct
+        let product2=JSON.parse(localStorage.getItem('product'));
+        console.log(product2);
+    </script>
+</body>
+</html>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM basics</title>
+</head>
+<body>
+    <div id="my-div" class="hello">Hello Tushar Singh</div>
+    <script>
+        
+        // 0-all the things present in our page is called the DOM.
+        // 1.document.location
+        // 2.document.title
+        // 3.document.href
+        // 4.document.domain
+        // 5.document.innerHTML
+        // 6.document.innerText
+        // 7.document.classList
+        // 8.document.classList.add()
+        //creating the new element
+        let button=document.createElement('Button');
+        //now appennd it
+        document.querySelector('#my-div').appendChild(button);
+        button.innerText='Click me';
+        //now remove it
+        document.querySelector('#my-div').removeChild(button);
+    </script>
+</body>
+</html>
